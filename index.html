@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta en el Campo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .field {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to top, #87CEEB, #FFFACD);
+    }
+
+    .flowers {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: url('https://www.publicdomainpictures.net/pictures/290000/velka/field-of-flowers.jpg') no-repeat center/cover;
+    }
+
+    .card-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-width: 500px;
+      height: 70%;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: justify;
+      overflow-y: auto;
+      box-sizing: border-box;
+      animation: fadeIn 1s ease;
+    }
+
+    .card-container h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .card-container p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    /* Estilo para hacer más visible el contenedor desplazable */
+    .card-container::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .card-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+
+    .card-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="field">
+    <div class="flowers"></div>
+  </div>
+
+  <div class="card-container" id="card">
+    <h1>Mi chanchita hermosa</h1>
+    <p>
+      <br><br>
+      Hoy es un día muy especial, el día en que el mundo recibió el regalo más hermoso que jamás podría imaginar: tú. Mi chacnhita, quiero aprovechar este momento recordarte cuánto te amo y admiro.
+      <br><br>
+      Primero que nada, ¡feliz cumpleaños, amorcito! Estoy tan agradecido de que existas, de que ilumines este mundo y mi vida con tu amor, tu ternura y esa magia que solo tú posees. Eres una persona única, una mezcla perfecta de inteligencia, fortaleza y belleza. No hay día que pase sin que me sienta afortunado por tenerte a mi lado.
+      <br><br>
+      Admiro tantas cosas de ti. Tu risa es lo que mas me gusta, esa que llena de alegría hasta en los dias mas malos. Tus abrazos son mi casita, y me inspiras a ser mejor cada día.
+      <br><br>
+      Eres fuerte, cariñosa, valiente y llena de luz. Me encanta cómo haces que cada pequeño momento sea especial, cómo te entregas a todo lo que haces y cómo amas con tanta intensidad y sinceridad. Tu capacidad de dar lo mejor de ti a las personas que amas me encanta.
+      <br><br>
+      Hoy quiero que sepas que celebraré cada instante de este día contigo. Quiero verte sonreír, quiero que te sientas la persona más amada y especial del universo, porque eso es exactamente lo que eres para mí.
+      <br><br>
+      Mi chanchita, gracias por ser quien eres, por todo lo que compartimos y por todo lo que aún nos espera. Sigamos construyendo juntos un futuro lleno de sueños, amor y felicidad, sacando todo lo malo que vaya pasando.
+      <br><br>
+      Espero que este cumpleaños sea tan increíble como tú, porque no mereces nada menos que lo mejor. Y quiero que sepas que siempre estaré aquí para ti, para amarte, apoyarte y hacerte feliz todos los días de tu vida.
+      <br><br>
+      ¡Feliz cumpleaños, mi chanchitaaaaa! Que este nuevo año de vida esté lleno de risas, aventuras y momentos inolvidables a tu lado. Te cielo infinito.
+      <br><br>
+      Eres mi todo,<br>
+      Tu amorcito ❤️
+    </p>
+  </div>
+
+  <script>
+    // Esperar 3 segundos y mostrar la carta
+    setTimeout(() => {
+      const card = document.getElementById('card');
+      card.style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
